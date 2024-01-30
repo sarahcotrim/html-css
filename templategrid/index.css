@@ -1,0 +1,118 @@
+.content{
+    height: 600px;
+    display: grid;
+    grid-template-areas:"esquerda titulo direita"
+                        "esquerda centro direita"
+                        "esquerda rodape direita";
+    grid-template-rows: 110px 1fr 100px;
+    grid-template-columns: 200px 1fr 150px;
+}
+
+.esquerda{
+    grid-area: esquerda;
+    background-color: #e8cef3;
+    display: grid;
+    grid-template-areas:"imagem"
+                       "conteudo"
+                       "final";
+    grid-template-rows: 170px 1fr 1fr;
+}
+
+.esquerda .imagem{
+    background-color: #ede6db;
+    background-image: url(livros.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+
+.esquerda .conteudo{
+    background-color: #d0b5e8;
+    text-align: center;
+}
+
+.esquerda .final{
+    background-color: #b09cc2;
+    margin: 0%;
+}
+
+.direita{
+    background-color: plum;
+    grid-area: direita;
+}
+
+.direita .b{
+    background-color: aliceblue;
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.direita .c{
+    background-color: aqua;
+    height: 200px;
+}
+
+.direita .d{
+    background-color: lightblue;
+    height: 200px;
+}
+
+.centro{
+    grid-area: centro;
+    background-color: #a184d0;
+    display: flex;
+}
+
+.centro .foto{
+    background-color: lightcoral;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.centro .foto1{
+    background-color: lightpink;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.centro .foto2{
+    background-color: pink;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.centro p{
+    margin: 0%;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: #ffe6ff;
+}
+
+.rodape p{
+    text-align: center;
+}
+
+.titulo{
+    grid-area: titulo;
+    background-color: #e8cef3;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.titulo a{
+    padding: 30px;
+}
