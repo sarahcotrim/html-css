@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="livros.jpeg" alt="" srcset="">
+
+        <nav>
+            <a href="./aluno.html">Aluno</a>
+            <a href="">Professor</a>
+            <a href="./index.html">Home</a>
+        </nav>
+
+        <img src="livros.jpeg" alt="" srcset="">
+    </header>
+    
+    <article class="main">
+        <section><h1>Cadastro de aluno</h1>
+            <form action="./aluno.html">
+                <label for="name">Nome do aluno</label>
+                <input type="text" name="nome" id="nome" placeholder="digite seu nome" required>
+
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" placeholder="digite seu endereco" required>
+
+                <label for="idade">Idade do aluno</label>
+                <input type="number" name="idade" id="idade" placeholder="selecione sua idade" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="digite seu email" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="digite sua senha" required>
+
+                <p>Sexo:
+
+                <label for="sexo">Maculino</label>
+                <input type="radio" name="sexo" id="sexo">
+
+                <label for="sexo">Feminino</label>
+                <input type="radio" name="sexo" id="sexo">
+
+                <input type="submit" value="salvar"></p>
+            </form>
+        </section>
+    </article>
+
+    <footer>Rodape</footer>
+</body>
+</html>

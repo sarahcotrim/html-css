@@ -1,0 +1,55 @@
+body{
+    background-color: #ffe3f1;
+}
+
+header{
+    background-color: #ffa4c4;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > img{
+    width: 100px;
+    height: 70px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+header nav > a:link{
+    color: #ffe8f0;
+    text-decoration: none;
+}
+
+header nav > a:hover{
+    color: red;
+}
+
+.main{
+    display: flex;
+    height: 400px;
+}
+
+.main > section{
+    flex: 4;
+    background-color: #ffbbd3;
+    width: 80%;
+    height: 100%;
+}
+
+.main > aside{
+    flex: 1;
+    background-color: #ffd2e2;
+    width: 20%;
+    height: 100%;
+}
+
+footer{
+    background-color: #ffe8f0;
+    width: 1350px;
+    height: 50px;
+}
