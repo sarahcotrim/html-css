@@ -17,7 +17,7 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 400px;
 }
 
 header nav > a:link{
@@ -32,6 +32,7 @@ header nav > a:hover{
 .main{
     display: flex;
     height: 400px;
+    background-color: #ffbbd3;
 }
 
 .main > section{
@@ -52,4 +53,132 @@ footer{
     background-color: #ffe8f0;
     width: 1350px;
     height: 50px;
+}
+
+#customers{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+  #customers tr:nth-child(even){background-color: palevioletred;}
+  #customers tr:hover {background-color: lightpink;}
+  
+#customers th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #ffbbd3;
+    border: 1px solid black;
+}
+
+#customers td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    background-color: #ffd2e2;
+    border: 1px solid black;
+}
+
+h3{
+    text-align: center;
+}
+
+#customers .center{
+    text-align: center;
+}
+
+.box{
+    width: 100%;
+    display: grid;
+    background-color: white;
+    grid-template-areas:"cadastro"
+                        "pessoal"
+                        "profissional";
+    grid-template-rows: 20px 1fr 1fr;
+    grid-template-columns: 100%;
+    padding-left: 230px;
+    text-align: center;
+    justify-content: center;
+}
+
+.box .cadastro{
+    grid-area: cadastro;
+}
+
+.box .pessoal{
+    grid-area: pessoal;
+    width: 800px;
+    border: #ffbbd3 solid 1px;
+    border-radius: 4px;
+    background-color: #ffbbd3;
+}
+
+.box .profissional{
+    grid-area: profissional;
+    width: 800px;
+    border: #ffd2e2 solid 1px;
+    border-radius: 4px;
+    background-color: #ffd2e2;
+}
+
+#endereco{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#nome{
+    width: 400px;
+    margin-right: 20px;
+}
+
+#email{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#cpf{
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 140px;
+}
+
+#cidade{
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#estado{
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#senha{
+    width: 100px;
+    margin-left: 10px; 
+    margin-right: 30px;
+}
+
+#trabalho{
+    width: 300px;
+    margin-right: 20px;
+}
+
+#formacao{
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+input[type=submit]{
+    background-color: palevioletred;
+    border: rounded;
+    color: white;
+    padding: 10px 30px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

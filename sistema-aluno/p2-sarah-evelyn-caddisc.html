@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Disciplina</title>
+    <link rel="stylesheet" href="caddisc.css">
+</head>
+<body>
+    <header>
+
+        <img src="livros.jpeg" alt="" srcset="">
+
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./aluno.html">Cadastro Aluno</a>
+            <a href="./lista-aluno.html">Lista Aluno</a>
+            <a href="./professor.html">Cadastro Professor</a>
+            <a href="./lista-professor.html">Lista Professor</a>
+            <a href="./p2-sarah-evelyn-caddisc.html">Cadastro Disciplina</a>
+            <a href="./p2-sarah-evelyn-lisdisc.html">Lista Disciplina</a>
+        </nav>
+
+        <img src="livros.jpeg" alt="" srcset="">
+
+    </header>
+    
+    <article class="main">
+
+        <section><h3>Cadastro de Disciplinas</h3>
+
+        <div class="box">
+            
+            <form action="./p2-sarah-evelyn-caddisc.html">
+
+            <br><label for="name">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="digite o nome da disciplina" required><br><br>
+
+            <label for="professor">Professor</label>
+            <input type="text" name="professor" id="professor" placeholder="digite o nome do professor" required><br><br>
+    
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id" placeholder="digite o ID" required>
+    
+            <label for="ch">Carga Horaria</label>
+            <input type="text" name="ch" id="ch" placeholder="digite a carga horaria" required><br><br>
+
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" required>
+
+            <label for="nota">Nota</label>
+            <input type="number" name="nota" id="nota" placeholder="digite a nota" required>
+
+            <label for="ano">Ano Letivo</label>
+            <input type="text" name="ano" id="ano" placeholder="digite a ano" required><br><br>
+
+            <label for="semestre">Semestre</label>
+            <select id="semestre" name="semestre">
+                <option value="1">1 semestre</option>
+                <option value="2">2 semestre</option>
+                <option value="3">3 semestre</option>
+            </select>
+
+            <label for="nota minima">Nota Minima</label>
+            <select id="nota minima" name="nota minima">
+                <option value="50">50 pontos</option>
+                <option value="60">60 pontos</option>
+                <option value="70">70 pontos</option>
+            </select><br>
+
+            <br><br><input type="submit" value="salvar"><br><br>
+
+            </form>
+
+        </div>
+
+        </section>
+
+    </article>
+
+    <footer>Rodape</footer>
+</body>
+</html>
